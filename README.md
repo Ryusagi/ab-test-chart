@@ -16,6 +16,7 @@ Features:
 - Line style selector (Line, Smooth, Area)
 - Light / Dark theme toggle
 - Export chart to PNG
+- Responsive layout
 
 For local setup:
 
