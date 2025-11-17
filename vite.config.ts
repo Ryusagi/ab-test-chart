@@ -13,10 +13,13 @@ export default defineConfig({
     // Важно для доступа из сети
     allowedHosts: ['.localhost', '.local']
   },
+
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
   },
+
   base: '/ab-test-chart/', // for GitHub Pages
   resolve: {
     alias: {
