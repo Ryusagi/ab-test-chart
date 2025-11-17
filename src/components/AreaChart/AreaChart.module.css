@@ -1,0 +1,91 @@
+.chartContainer {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chartContainer * {
+    outline: none;
+}
+
+.chartContainer.dark {
+    background: #2d3748;
+    color: white;
+}
+
+.noData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    font-size: 16px;
+}
+
+.tooltip {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tooltipHeader {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 4px;
+}
+
+.tooltipContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tooltipItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.colorDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.variationName {
+    font-weight: 500;
+    color: #666;
+}
+
+.value {
+    font-weight: 600;
+    color: #333;
+    margin-left: auto;
+}
+
+/* Dark theme */
+.chartContainer.dark .tooltip {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: white;
+}
+
+.chartContainer.dark .tooltipHeader {
+    color: #e2e8f0;
+    border-bottom-color: #4a5568;
+}
+
+.chartContainer.dark .variationName {
+    color: #cbd5e0;
+}
+
+.chartContainer.dark .value {
+    color: #e2e8f0;
+}

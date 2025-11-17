@@ -1,0 +1,50 @@
+.app {
+  min-height: 100vh;
+  background: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.app.dark {
+  background: #1a202c;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.app.dark .title {
+  color: white;
+}
+
+@media (max-width: 1300px) and (min-width: 671px) {
+  .container {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

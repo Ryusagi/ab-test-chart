@@ -1,0 +1,99 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.controls.dark {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.controlPart {
+  display: flex;
+  gap: 20px;
+}
+
+.controlLabel {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.variationContainer {
+  width: 180px;
+}
+
+.timeFrameContainer,
+.lineTypeContainer {
+  width: 100px;
+}
+
+.themeButton {
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.themeButton:hover {
+  border-color: #007bff;
+}
+
+.dark .controlLabel {
+  color: #e2e8f0;
+}
+
+.dark .themeButton {
+  background: #4a5568;
+  border-color: #718096;
+  color: #e2e8f0;
+}
+
+.dark .themeButton:hover {
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .controlGroup {
+    align-items: stretch;
+  }
+
+  .controlPart {
+    flex-direction: column;
+  }
+
+  .variationContainer,
+  .timeFrameContainer,
+  .lineTypeContainer {
+    width: 100%;
+  }
+
+  .variationContainer,
+  .timeFrameContainer {
+    justify-content: center;
+  }
+}

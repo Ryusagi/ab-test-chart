@@ -1,0 +1,48 @@
+.chartContainer {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chartContainer * {
+    outline: none;
+}
+
+.chartContainer.dark {
+    background: #2d3748;
+    color: white;
+}
+
+.chartContainer.dark .tooltip {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: white;
+}
+
+.chartContainer.dark .tooltipHeader {
+    color: #e2e8f0;
+    border-bottom-color: #4a5568;
+}
+
+.chartContainer.dark .variationName {
+    color: #cbd5e0;
+}
+
+.chartContainer.dark .value {
+    color: #e2e8f0;
+}
+
+@media (max-width: 1300px) and (min-width: 671px) {
+    .chartContainer {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 670px) {
+    .chartContainer {
+        padding: 12px;
+        margin: 0 -12px;
+        border-radius: 0;
+    }
+}

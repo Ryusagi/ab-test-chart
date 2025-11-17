@@ -1,0 +1,11 @@
+#id {
+  height: 36px;
+  background: #28a745;
+  border-color: #28a745;
+}
+
+#id:hover,
+#id:active {
+  background: #218838;
+  border-color: #1e7e34;
+}

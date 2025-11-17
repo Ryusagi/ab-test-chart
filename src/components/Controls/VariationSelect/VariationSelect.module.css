@@ -1,0 +1,6 @@
+.placeholder {
+    padding: 6px 10px 6px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
