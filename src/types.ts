@@ -24,8 +24,8 @@ export interface PeriodInfo {
 
 export interface DataPoint {
   date: string;
-  visits: VariationInfo;
-  conversions: VariationInfo;
+  visits: VariationInfo<Variation>;
+  conversions: VariationInfo<Variation>;
 }
 
 export interface VariationData {
