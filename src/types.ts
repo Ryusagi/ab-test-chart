@@ -12,6 +12,7 @@ export type Variation = ExtraVariation | OriginalVariation;
 //   [k: `${Variation['id']}` | '0']: number;
 // };
 // Как будто бы такой вариант будет по корректнее, во всяком случае тут тс уже не ругается
+// в целом с типизацией что то не то, типы плохо выводятся
 export type VariationInfo<TVariation extends Variation> = Record<
   TVariation extends ExtraVariation ? ExtraVariation['id'] : '0',
   number
