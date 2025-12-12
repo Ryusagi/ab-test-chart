@@ -2,6 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ErrorBoundary.module.css';
 
+// Классовые компоненты? зачем?
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);

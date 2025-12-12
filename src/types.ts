@@ -8,9 +8,14 @@ interface ExtraVariation {
 
 export type Variation = ExtraVariation | OriginalVariation;
 
-export type VariationInfo = {
-  [k: `${Variation['id']}` | '0']: number;
-};
+// export type VariationInfo = {
+//   [k: `${Variation['id']}` | '0']: number;
+// };
+// Как будто бы такой вариант будет по корректнее, во всяком случае тут тс уже не ругается
+export type VariationInfo<TVariation extends Variation> = Record<
+  TVariation extends ExtraVariation ? ExtraVariation['id'] : '0',
+  number
+>;
 
 export interface PeriodInfo {
   visits: number;

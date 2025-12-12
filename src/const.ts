@@ -175,7 +175,21 @@ export const MOCK_DATA: VariationData = {
     },
   ],
 };
-
+// если не нужно, зачем оставлять?
 //export const COLORS = ['#007bff', '#28a745', '#dc3545', '#ffc107', '#6f42c1']; - other palette
-export const COLORS = ['#46464F', '#4142EF','#FF8346','#35BDAD','#FFB958','#DF57BC',];
-export const DARK_THEME_COLORS = ['#C0C0C0', '#4142EF','#FF8346','#35BDAD','#FFB958','#DF57BC',];
+export const COLORS = [
+  '#46464F',
+  '#4142EF',
+  '#FF8346',
+  '#35BDAD',
+  '#FFB958',
+  '#DF57BC',
+];
+export const DARK_THEME_COLORS = [
+  '#C0C0C0',
+  '#4142EF',
+  '#FF8346',
+  '#35BDAD',
+  '#FFB958',
+  '#DF57BC',
+];

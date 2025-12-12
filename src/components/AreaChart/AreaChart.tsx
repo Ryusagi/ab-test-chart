@@ -44,7 +44,9 @@ export const AreaChart: FC<AreaChartProps> = ({
           <XAxis
             dataKey="date"
             tick={{ fill: theme === 'dark' ? '#e2e8f0' : '#333' }}
+            // Цвета лучше к ностанты или мапу, или лучше дизайн систему собрать
             axisLine={{ stroke: theme === 'dark' ? '#4a5568' : '#666' }}
+            // логика в jsx неприветствуется
             tickLine={{ stroke: theme === 'dark' ? '#4a5568' : '#666' }}
           />
           <YAxis

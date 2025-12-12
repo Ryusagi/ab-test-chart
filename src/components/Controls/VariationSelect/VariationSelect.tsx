@@ -9,6 +9,7 @@ export const VariationSelect: FC<VariationSelectProps> = ({
   selected,
   onChange,
 }) => {
+  //useCallback
   const handleChange = (values: string[]) => {
     if (values.length === 0) {
       return;
@@ -16,6 +17,7 @@ export const VariationSelect: FC<VariationSelectProps> = ({
     onChange(values);
   };
 
+  // memo
   const options = getSelectOptions(variations);
 
   const tagRender = () => {
@@ -23,13 +25,16 @@ export const VariationSelect: FC<VariationSelectProps> = ({
       selected.length === variations.length ? 'All' : `${selected.length}`;
     const variationsText = selected.length > 1 ? 'variations' : 'variation';
     return (
-      <div className={styles.placeholder}>{`${number} ${variationsText} selected`}</div>
+      <div
+        className={styles.placeholder}
+      >{`${number} ${variationsText} selected`}</div>
     );
   };
 
   return (
     <Select
       mode="multiple"
+      // думаю так же можно опустить
       showSearch={false}
       filterOption={false}
       style={{ width: '100%' }}
