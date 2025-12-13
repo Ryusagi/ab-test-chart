@@ -8,6 +8,7 @@ import styles from './Export.module.css';
 export const Export: FC<ExportProps> = ({ chartRef }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
+  // useCallback
   const handleClick = () => exportChart(chartRef.current, setIsLoading);
 
   return (

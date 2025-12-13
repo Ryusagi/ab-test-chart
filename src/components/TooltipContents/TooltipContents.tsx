@@ -12,6 +12,7 @@ export const TooltipContents: FC<TooltipProps> = ({
 }) => {
   if (!active || !payload) return null;
 
+  // как будто бы это просится вынестись в контекст темы и инжектить isDark по месту, а не высчитывать
   const isDark = theme === 'dark';
   const classList = `${styles.tooltip} ${isDark ? styles.dark : ''}`;
   const picColor = isDark ? '#e2e8f0' : '#5E5D67';
@@ -23,6 +24,7 @@ export const TooltipContents: FC<TooltipProps> = ({
         {label}
       </div>
       <div className={styles.tooltipContent}>
+        {/*Я думаю что filter и map можно заменить на reduce и не бегать лишний раз по коллекции*/}
         {payload
           .filter(entry => visibleVariations.includes(entry.dataKey))
           .sort((a, b) => b.value - a.value)

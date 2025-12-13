@@ -9,11 +9,13 @@ export const SelectOptions: FC<SelectProps<T>> = ({
   selected,
   onChange,
 }) => {
+  //memo
   const options = getSelectOptions(rawOptions);
 
   return (
     <Select
       className={styles.container}
+      // Думаю это можно опустить
       showSearch={false}
       filterOption={false}
       style={{ width: '100%' }}

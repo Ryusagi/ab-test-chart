@@ -32,10 +32,13 @@ export const Controls: FC<ControlsProps> = ({
             />
           </div>
         </div>
+        {/*Начало*/}
+        {/*Можно вынести в отдельный компонент <SelectWithLabel />*/}
         <div className={styles.controlGroup}>
           <label className={styles.controlLabel}>Time Frame:</label>
           <div className={styles.timeFrameContainer}>
             <Select
+              // options лучше вынести в константы, что бы лишний раз не нагружать рендер пересозданием ссылок
               options={['day', 'week']}
               selected={timeFrame}
               onChange={onTimeFrameChange}
@@ -43,6 +46,7 @@ export const Controls: FC<ControlsProps> = ({
           </div>
         </div>
       </div>
+      {/*Конец*/}
       <div className={styles.controlPart}>
         <div className={styles.controlGroup}>
           <label className={styles.controlLabel}>Line Style:</label>
